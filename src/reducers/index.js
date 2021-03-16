@@ -24,10 +24,10 @@ const initialState={
         case(ADD_FEATURE):
             return ({
                 ...state, 
-                additionalPrice: state.additionalPrice + action.payload.additionalPrice,
+                additionalPrice: state.additionalPrice + action.payload.price,
                 car: {
                     ...state.car, 
-                    features: [...state.car.features, action.payload.name]
+                    features: [...state.car.features, action.payload]
                 },
                 additionalFeatures: 
                     state.additionalFeatures.filter((feat)=>{
