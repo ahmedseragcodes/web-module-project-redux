@@ -26,6 +26,7 @@ const App = (props) => {
     ]
   };
 
+  console.log(state)
   return (
     <div className="boxes">
       <div className="box">
